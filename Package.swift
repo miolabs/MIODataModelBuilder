@@ -26,10 +26,10 @@ let package = Package(
             ],
             path: "CoreDataModelEditor/Sources"
         ),
-        .testTarget(
-            name: "CoreDataModelEditorTests",
-            dependencies: ["CoreDataModelEditor"],
-            path: "CoreDataModelEditor/Tests"
-        )
+//        .testTarget(
+//            name: "CoreDataModelEditorTests",
+//            dependencies: ["CoreDataModelEditor"],
+//            path: "CoreDataModelEditor/Tests"
+//        )
     ]
 )

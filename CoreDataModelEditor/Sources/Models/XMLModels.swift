@@ -384,9 +384,9 @@ extension CoreDataModel {
         let model = CoreDataModel(name: xmlModel.name)
         
         // Convert entities
-        if let xmlEntities = xmlModel.entities {
-            model.entities = xmlEntities.map { CDEntity.from(xmlEntity: $0) }
-        }
+        
+        model.entities = xmlModel.entities.map { CDEntity.from(xmlEntity: $0) }
+        
         
         // Convert configurations
         if let xmlConfigurations = xmlModel.configurations {
